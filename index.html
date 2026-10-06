@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Fab Academy 2026 - Industrial FabLab Ucuenca</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logos">
+    <img src="images/ucuenca-logo.png" alt="Universidad de Cuenca">
+    <img src="images/fablab-logo.png" alt="Industrial FabLab Ucuenca">
+    <img src="images/industrial-logo.png" alt="Ingeniería Industrial">
+  </div>
+  <nav>
+    <a href="index.html" class="active" data-i18n="home">Home</a>
+    <a href="about.html" class="" data-i18n="about">About</a>
+    <a href="final-project.html" class="" data-i18n="final">Final Project</a>
+    <button class="lang-btn" id="langBtn" type="button">🌐 ES</button>
+  </nav>
+</header>
+<div class="layout">
+<aside>
+  <h3 data-i18n="weeks">Weeks</h3>
+  <a href="week01.html" class="" data-i18n="week" data-n="01">Week 01</a>
+  <a href="week02.html" class="" data-i18n="week" data-n="02">Week 02</a>
+  <a href="week03.html" class="" data-i18n="week" data-n="03">Week 03</a>
+</aside>
+<main>
+  <section class="hero hero-img">
+    <h1>Fab Academy 2026 - Industrial FabLab Ucuenca</h1>
+    <p data-i18n="heroText">This website documents the process we went through to create our Fab Academy 2026 project. Each week, we record and share what we learned along the way, including digital design, electronics, programming, machine design, and the development of our final project.</p>
+  </section>
+  <h2 data-i18n="team">Our Team</h2>
+  <div class="grid team-grid">
+    <div class="card" onclick="openMember(0)"><div class="avatar"><img src="images/jorge.png" alt="Jorge"></div><strong>Jorge</strong><br><small data-i18n="role6">6th-semester student</small></div>
+    <div class="card" onclick="openMember(1)"><div class="avatar">K</div><strong>Karla</strong><br><small data-i18n="role">Participating student</small></div>
+    <div class="card" onclick="openMember(2)"><div class="avatar">S</div><strong>Steven</strong><br><small data-i18n="role">Participating student</small></div>
+    <div class="card" onclick="openMember(3)"><div class="avatar">J</div><strong>Jonnathan</strong><br><small data-i18n="role6">6th-semester student</small></div>
+  </div>
+  <h2 class="weekly-title" data-i18n="weekly">Weekly Assignments</h2>
+  <div class="grid weekly-grid">
+    <a class="card week-card" href="week01.html"><img class="cover" src="images/week01.jpg" alt="Week 1"><div class="wc-body"><h3 data-i18n="week" data-n="1">Week 1</h3><p data-i18n="w1d">Website setup, GitHub workflow, and research of necessities.</p></div></a>
+    <a class="card week-card" href="week02.html"><img class="cover" src="images/week02.jpg" alt="Week 2"><div class="wc-body"><h3 data-i18n="week" data-n="2">Week 2</h3><p data-i18n="w2d">Computer Aided Design</p></div></a>
+    <a class="card week-card" href="week03.html"><div class="cover empty"></div><div class="wc-body"><h3 data-i18n="week" data-n="3">Week 3</h3><p data-i18n="weekSoon" data-n="3">Summary of Week 3 coming soon.</p></div></a>
+  </div>
+</main>
+</div>
+<div class="modal" id="modal"><div class="modal-box"><button class="close">&times;</button><div id="mBody"></div></div></div>
+<footer data-i18n="footer">Fab Academy 2026 · Industrial FabLab Ucuenca · Universidad de Cuenca</footer>
+<button id="toTop" title="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
