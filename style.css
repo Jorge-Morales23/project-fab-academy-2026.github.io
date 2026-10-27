@@ -146,3 +146,14 @@ nav a:hover{transform:translateY(-1px)}
 .dl-info small{color:var(--muted)}
 .dl-btn{margin-left:auto;background:var(--navy);color:#fff;font-weight:600;padding:9px 20px;border-radius:999px;transition:background .25s,transform .2s;white-space:nowrap}
 .dl-btn:hover{background:var(--red);transform:translateY(-2px)}
+
+/* ---- v6: week 03 ---- */
+.hero-week3{background:linear-gradient(rgba(11,42,91,.72),rgba(11,42,91,.62)),url(images/week03.jpg) center/cover no-repeat;padding:80px 34px}
+.panel ul,.panel ol{margin:0 0 12px 22px}
+.panel li{margin-bottom:4px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
+.gallery figure{margin:0}
+.gallery figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ph{min-height:200px;display:grid;place-items:center;border:2px dashed #9fb0d0;border-radius:10px;background:#eef3fc;color:var(--muted);font-weight:600;font-size:.9rem;padding:20px;text-align:center;word-break:break-all}
+.gallery .ph{aspect-ratio:4/3}
+.dl-box+.dl-box{margin-top:12px}
