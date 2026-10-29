@@ -157,3 +157,8 @@ nav a:hover{transform:translateY(-1px)}
 .ph{min-height:200px;display:grid;place-items:center;border:2px dashed #9fb0d0;border-radius:10px;background:#eef3fc;color:var(--muted);font-weight:600;font-size:.9rem;padding:20px;text-align:center;word-break:break-all}
 .gallery .ph{aspect-ratio:4/3}
 .dl-box+.dl-box{margin-top:12px}
+
+/* ---- v7: weeks 04 and 05 (image is optional: falls back to the blue gradient) ---- */
+.hero-week4{background:linear-gradient(rgba(11,42,91,.72),rgba(11,42,91,.62)),url(images/week04.jpg) center/cover no-repeat,linear-gradient(135deg,var(--navy),var(--blue));padding:80px 34px}
+.hero-week5{background:linear-gradient(rgba(11,42,91,.72),rgba(11,42,91,.62)),url(images/week05.jpg) center/cover no-repeat,linear-gradient(135deg,var(--navy),var(--blue));padding:80px 34px}
+
