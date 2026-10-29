@@ -30,8 +30,69 @@
   <a href="week05.html" class="active" data-i18n="week" data-n="05">Week 05</a>
 </aside>
 <main>
-  <section class="hero hero-week5"><h1 data-i18n="week" data-n="05">Week 05</h1><p data-i18n="weekSummary" data-n="05">Summary of Week 05.</p></section>
-  <div class="panel"><h2 data-i18n="assignment">Assignment</h2><p data-i18n="weekInfo" data-n="05">All the information for Week 05 goes here: process, images, files, and reflections.</p></div>
+  <section class="hero hero-week5"><h1 data-i18n="week" data-n="05">Week 05</h1><p data-i18n="w5sub">3D Scanning and Printing - Face scan, mesh cleanup in Blender and resin printing</p></section>
+
+  <div class="panel intro-panel">
+    <h2 data-i18n="w5introT">Introduction</h2>
+    <p data-i18n="w5intro1">3D scanning records the geometry of an object and produces a digital representation that can later be reviewed, edited or prepared for fabrication. The quality of the result depends, among other factors, on the correct use of the equipment and on following the instructions during capture.</p><p data-i18n="w5intro2">This week we scanned a classmate's face with a 3D scanning camera and the CR Studio software, cleaned the mesh in Blender, prepared it in Chitubox and printed it in resin. The practice covered the whole path from a real person to a physical piece.</p>
+    <div class="chips"><span class="chip c1" data-i18n="w5c1">3D scanning</span><span class="chip c2" data-i18n="w5c2">Editing in Blender</span><span class="chip c3" data-i18n="w5c3">Resin printing</span></div>
+    <div class="objective"><strong data-i18n="w5objL">Objective:</strong> <span data-i18n="w5obj">capture a face with a 3D scanner, improve the digital model and print it on a resin printer.</span></div>
+  </div>
+
+  <div class="panel sw" id="s1">
+    <h2 class="sw-title" data-i18n="w5s1T">1. 3D Scanning with CR Studio</h2><h3 class="sub" data-i18n="w5s1S">Capturing a face with a 3D scanning camera</h3>
+    <p data-i18n="w5s1a">We used a 3D scanning camera together with the CR Studio program to scan a classmate, focusing on the face. The procedure followed the instructions of the engineer, with the purpose of obtaining a digital model of the captured surface.</p><p data-i18n="w5s1b">This practice let us become familiar with three-dimensional data acquisition and understand that, after capturing an object or a person, the file may need adjustments before it can be used in other applications. It also showed the importance of scanning in an orderly way to get a more complete representation.</p>
+    <figure><img src="images/week05-01.jpg" alt="Face scanning session"><figcaption data-i18n="w5f1">Scanning a classmate's face with the 3D scanning camera.</figcaption></figure>
+    <div class="gallery">
+      <figure><img src="images/week05-02.jpg" alt="CR Studio quick scan"><figcaption data-i18n="w5f2">CR Studio, quick scan mode: the face appears as it is captured.</figcaption></figure>
+      <figure><img src="images/week05-03.jpg" alt="Scan reconstruction"><figcaption data-i18n="w5f3">Reconstruction of the scan in progress in CR Studio.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="panel sw" id="s2">
+    <h2 class="sw-title" data-i18n="w5s2T">2. Editing the Scan</h2><h3 class="sub" data-i18n="w5s2S">From the raw capture to a cleaner model</h3>
+    <p data-i18n="w5s2a">After scanning, the file was processed in the edit mode of CR Studio, where the options to merge, remove noise, repair and simplify the mesh are available. Then it was imported into Blender, an application for editing and refining three-dimensional models. There the captured geometry was reviewed and the visible imperfections were corrected, with the goal of improving the presentation and the continuity of the model surface.</p><p data-i18n="w5s2b">Editing after the scan is important because the initial file can contain irregularities, incomplete areas or details that need cleaning. Modeling tools make it possible to prepare the digital object for review, export or possible fabrication, depending on the characteristics of the file and the process to be used.</p>
+    <div class="gallery">
+      <figure><img src="images/week05-04.jpg" alt="Processing in CR Studio"><figcaption data-i18n="w5f3b">Processing of the scan in CR Studio.</figcaption></figure>
+      <figure><img src="images/week05-05.jpg" alt="CR Studio edit mode"><figcaption data-i18n="w5f4">Edit mode in CR Studio: raw mesh with the Process options (merge, remove noise, repair, simplify).</figcaption></figure>
+    </div>
+    <figure><img src="images/week05-06.jpg" alt="Blender sculpt mode"><figcaption data-i18n="w5f5">Blender in sculpt mode: smoothing the surface of the scan.</figcaption></figure>
+    <p data-i18n="w5s2c">As a result of the editing, we obtained a visually cleaner and more defined model, ready to be exported for the preparation and fabrication stages.</p>
+  </div>
+
+  <div class="panel sw" id="s3">
+    <h2 class="sw-title" data-i18n="w5s3T">3. Preparation and Resin Printing</h2><h3 class="sub" data-i18n="w5s3S">From Chitubox to the finished piece</h3>
+    <p data-i18n="w5s3a">Once the face was scanned in CR Studio, it was loaded into Blender to improve the quality of the scan, removing imperfections so that it came out tidier. Then the finished design was loaded into Chitubox to set its size and place supports where necessary, so the piece is not damaged during printing. After the adjustments, the file is saved on a USB flash drive.</p>
+    <p><strong data-i18n="w5s3b">Steps followed for printing and post-processing:</strong></p>
+    <ol><li data-i18n="w5o1">Put on latex gloves, a mask and goggles to protect the eyes.</li><li data-i18n="w5o2">Remove the printer's vat, take off the UV protective cover and pour photosensitive resin (green) into the steel vat up to the mark on the vat.</li><li data-i18n="w5o3">Put the vat back into the resin printer, place the UV protective cover again, insert the USB drive with the file and let it print for the time the printer sets.</li><li data-i18n="w5o4">When printing finishes, remove the UV cover, take apart the build plate and the vat, and let the remaining resin drip off the plate and the printed figure. Then carefully remove the figure from the plate with a spatula so it does not break from a knock or a fall.</li><li data-i18n="w5o5">Wash the figure and the build plate. The resin left in the vat is strained through a small filter and poured back into the bottle so it can be reused later.</li><li data-i18n="w5o6">Dry the figure with a cloth or absorbent paper, and also dry the plate, the vat, the filter and the spatula. Then put the figure in the washing machine for two minutes and repeat this at least 3 times.</li><li data-i18n="w5o7">Dry it again and cure it in the curing machine for two minutes, 3 more times. Only after all these steps can the figure be handled with bare hands.</li></ol>
+    <div class="note" data-i18n="w5warn">Safety: uncured resin is irritating, so gloves, a mask and goggles are used until the piece is fully washed and cured.</div>
+  </div>
+
+  <div class="panel sw" id="s4">
+    <h2 class="sw-title" data-i18n="w5s4T">4. Resin Printing Results</h2><h3 class="sub" data-i18n="w5s4S">Printer, handling and washing</h3>
+    <p data-i18n="w5s4a">These photos show the resin printer, the preparation of the print and the printed piece being removed and washed after printing.</p>
+    <div class="gallery">
+      <figure><img src="images/week05-07.jpg" alt="Resin printer"><figcaption data-i18n="w5f6">Resin printer used for the print.</figcaption></figure>
+      <figure><img src="images/week05-08.jpg" alt="Preparing the print"><figcaption data-i18n="w5f7">Preparing the print: handling the printer with protection.</figcaption></figure>
+      <figure><img src="images/week05-09.jpg" alt="Printed face being washed"><figcaption data-i18n="w5f8">Printed face in green resin being washed.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w5toolT">Tools and Equipment</h2>
+    <ul><li data-i18n="w5t1">Scanning: 3D scanning camera and CR Studio</li><li data-i18n="w5t2">Mesh editing: Blender</li><li data-i18n="w5t3">Print preparation: Chitubox (size and supports)</li><li data-i18n="w5t4">Printing: resin printer, green photosensitive resin, washing and curing machine</li></ul>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w5conT">Conclusion</h2>
+    <p data-i18n="w5con1">This week we understood that 3D scanning and 3D printing complement each other: first a real object is captured digitally, then the model is improved, and finally it is prepared for its physical reproduction. The face scan in CR Studio, the cleanup in Blender and the print in resin covered the whole workflow.</p><p data-i18n="w5con2">The final quality depends on the initial capture, on the editing and on the chosen fabrication parameters, such as the supports in Chitubox. Resin printing also requires careful handling: protection, washing and curing steps must be followed in order before the piece can be touched safely.</p>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w5bibT">Bibliography</h2>
+    <ul class="bib"><li>Creality. (2026). <em>CR Studio: 3D scanning software user guide</em>. Shenzhen Creality 3D Technology Co., Ltd. <a href="https://www.creality.com" target="_blank" rel="noopener">creality.com</a></li><li>Blender Foundation. (2026). <em>Blender Manual: Sculpt mode</em>. <a href="https://docs.blender.org/manual/en/latest/" target="_blank" rel="noopener">docs.blender.org/manual</a></li><li>CHITUBOX. (2026). <em>CHITUBOX Basic user guide: supports and slicing for resin printing</em>. <a href="https://www.chitubox.com" target="_blank" rel="noopener">chitubox.com</a></li><li>Fab Academy. (2026). <em>3D Scanning and Printing: weekly class and assignment</em>. <a href="https://fabacademy.org" target="_blank" rel="noopener">fabacademy.org</a></li><li>Industrial FabLab Ucuenca. (2026). <em>Class material, Week 05: 3D scanning and resin printing</em>. Universidad de Cuenca.</li></ul>
+  </div>
+
   <p><a href="index.html" style="color:var(--blue);font-weight:600" data-i18n="back">← Back to Home</a></p>
 </main></div>
 <footer data-i18n="footer">Fab Academy 2026 · Industrial FabLab Ucuenca · Universidad de Cuenca</footer>
