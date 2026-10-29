@@ -30,8 +30,66 @@
   <a href="week05.html" class="" data-i18n="week" data-n="05">Week 05</a>
 </aside>
 <main>
-  <section class="hero hero-week4"><h1 data-i18n="week" data-n="04">Week 04</h1><p data-i18n="weekSummary" data-n="04">Summary of Week 04.</p></section>
-  <div class="panel"><h2 data-i18n="assignment">Assignment</h2><p data-i18n="weekInfo" data-n="04">All the information for Week 04 goes here: process, images, files, and reflections.</p></div>
+  <section class="hero hero-week4"><h1 data-i18n="week" data-n="04">Week 04</h1><p data-i18n="w4sub">Computer-Controlled Cutting - Parametric design, laser cutter and press-fit chair design</p></section>
+
+  <div class="panel intro-panel">
+    <h2 data-i18n="w4introT">Introduction</h2>
+    <p data-i18n="w4intro1">This week we worked on computer-controlled cutting. We learned to draw parametric 2D sketches in Autodesk Fusion, to prepare files and operate the laboratory laser cutter, and we started designing a chair built as a press-fit kit: flat pieces cut on the laser cutter that are assembled by slotting into each other, without nails or screws.</p>
+    <p data-i18n="w4intro2">The three parts of the week are connected: parameters let the joints adapt to the real thickness of the material, the laser cutter turns the 2D drawing into physical pieces, and the chair is the project where we apply both ideas.</p>
+    <div class="chips"><span class="chip c1" data-i18n="w4c1">Parametrization</span><span class="chip c2" data-i18n="w4c2">Laser cutting</span><span class="chip c3" data-i18n="w4c3">Press-fit design</span></div>
+    <div class="objective"><strong data-i18n="w4objL">Objective:</strong> <span data-i18n="w4obj">design parametric 2D joints, prepare them for the laser cutter and develop the idea and sketch of a press-fit chair.</span></div>
+  </div>
+
+  <div class="panel sw" id="s1">
+    <h2 class="sw-title" data-i18n="w4s1T">1. Parametrization in Autodesk Fusion</h2>
+    <h3 class="sub" data-i18n="w4s1S">Sketches that update by themselves</h3>
+    <p data-i18n="w4s1a">In this first part we worked with parametrization in Autodesk Fusion. On the sketch grid we drew two pieces that fit into each other: an "F"-shaped piece with a horizontal slot and a vertical bar with a protruding tab.</p>
+    <p><strong data-i18n="w4s1b">The most important points:</strong></p>
+    <ul><li data-i18n="w4s1l1">Automatic dimensions: instead of fixed measurements we use parameters (variables). If the material thickness changes (for example, from 3 mm MDF to 6 mm), the width of the slot and of the tab updates by itself throughout the drawing.</li><li data-i18n="w4s1l2">Exact fit: we make sure the shapes are completely closed (shaded light blue) and use fixed right angles, so that once cut they fit by pressure without being loose.</li><li data-i18n="w4s1l3">Ready to export: once the 2D sketch is ready in Fusion, it is saved as a vector file (.dxf) to take it directly to the laser cutter software.</li></ul>
+    <figure><img src="images/week04-01.jpg" alt="Parametric sketch in Fusion"><figcaption data-i18n="w4f1">Parametric sketch in Fusion: "F" piece with a slot and a bar with a tab.</figcaption></figure>
+  </div>
+
+  <div class="panel sw" id="s2">
+    <h2 class="sw-title" data-i18n="w4s2T">2. Using the Laser Cutter</h2>
+    <h3 class="sub" data-i18n="w4s2S">From the DXF file to the cut MDF board</h3>
+    <p data-i18n="w4s2a">We were shown how the laboratory laser cutter works and how to prepare our files in RDWorks V8 before cutting MDF boards.</p>
+    <p><strong data-i18n="w4s2b">The most important points:</strong></p>
+    <ul><li data-i18n="w4s2l1">Setup in the software (RDWorks V8): we open the .dxf design of our pieces, check the size on the grid and configure the Cut layer, adjusting two key values according to the wood thickness: speed (how fast the laser moves) and power (the strength of the laser shot).</li><li data-i18n="w4s2l2">Avoiding burnt edges: with too much power or too little speed the MDF edge burns excessively; if power is lacking, the piece is not completely cut through.</li><li data-i18n="w4s2l3">Physical preparation on the machine: we placed the MDF board on the honeycomb table, calibrated the height of the laser head above the material and ran cutting tests, checking that the pieces came off cleanly.</li></ul>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th data-i18n="w4thP">Parameter</th><th data-i18n="w4thE">Effect</th></tr></thead><tbody><tr><td data-i18n="w4pr1">Speed</td><td data-i18n="w4pe1">Too slow burns the edge; too fast does not cut through.</td></tr><tr><td data-i18n="w4pr2">Power</td><td data-i18n="w4pe2">Too high burns the MDF; too low leaves the piece attached.</td></tr><tr><td data-i18n="w4pr3">Head height</td><td data-i18n="w4pe3">Calibrated over the material so the beam is focused on the surface.</td></tr><tr><td data-i18n="w4pr4">Work table</td><td data-i18n="w4pe4">Honeycomb panel that holds the board and lets the cut pass through.</td></tr></tbody></table></div>
+    <div class="gallery">
+      <figure><img src="images/week04-02.jpg" alt="Laser cutting practice on MDF"><figcaption data-i18n="w4f2">Laser cutting practice on an MDF board in the laboratory.</figcaption></figure>
+      <figure><img src="images/week04-03.jpg" alt="RDWorks V8 setup"><figcaption data-i18n="w4f3">Setting up the test design in RDWorks V8.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="panel sw" id="s3">
+    <h2 class="sw-title" data-i18n="w4s3T">3. Idea and Sketch for a Chair (Press-Fit)</h2>
+    <h3 class="sub" data-i18n="w4s3S">An elephant chair built from flat pieces</h3>
+    <p data-i18n="w4s3a">We worked on brainstorming and design to build a chair. The goal is to move our sketch to Autodesk Fusion and build it as a press-fit kit (flat laser-cut pieces that are assembled by slotting into each other without nails or screws).</p>
+    <p><strong data-i18n="w4s3b">The most important points:</strong></p>
+    <ul><li data-i18n="w4s3l1">Reference idea (elephant chair): we chose a wooden children's chair whose sides have the silhouette of an elephant: the legs are the base, the curved back forms the seat and the raised trunk works as the backrest.</li><li data-i18n="w4s3l2">2 elephant-shaped sides: in our "final sketch" in the notebook the sides have slots along the seat curve, slots in the trunk area (backrest) and slots at the bottom of the legs.</li><li data-i18n="w4s3l3">Short boards or slats: they have notches at the ends and fit between the two side elephants to form the whole surface where one sits and leans.</li><li data-i18n="w4s3l4">Long lower crossbars: they fit into the slots of the front and rear legs to give firmness to the base and keep the chair from moving sideways.</li></ul>
+    <div class="gallery">
+      <figure><img src="images/week04-04.jpg" alt="Elephant chair reference"><figcaption data-i18n="w4f4">Reference idea: wooden chair in the shape of an elephant.</figcaption></figure>
+      <figure><img src="images/week04-05.jpg" alt="Final sketch in notebook"><figcaption data-i18n="w4f5">Final sketch in the notebook with the slots and pieces of the press-fit design.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w4toolT">Tools and Equipment</h2>
+    <ul><li data-i18n="w4t1">Design: Autodesk Fusion (parametric 2D sketch, .dxf export)</li><li data-i18n="w4t2">Laser cutter control software: RDWorks V8</li><li data-i18n="w4t3">Machine: laboratory laser cutter with honeycomb table</li><li data-i18n="w4t4">Material: MDF boards</li></ul>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w4conT">Conclusion</h2>
+    <p data-i18n="w4con1">This week we saw how a design goes from the screen to a physical piece. With parameters in Fusion the joints depend on the material thickness, so the same drawing can be reused with another board; with the laser cutter and RDWorks V8 we learned that speed, power and head height decide whether the cut is clean or burnt; and with the elephant chair sketch we planned a press-fit structure of two sides, slats and crossbars.</p>
+    <p data-i18n="w4con2">The main lesson is that a good press-fit design depends on precise measurements and on knowing the machine and the material. The next step is to draw the chair in Fusion with parametric slots, cut a test and adjust the fit before cutting the final pieces.</p>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="w4bibT">Bibliography</h2>
+    <ul class="bib"><li>Autodesk. (2026). <em>Autodesk Fusion Help: Parameters and sketch constraints</em>. Autodesk Inc. <a href="https://help.autodesk.com/view/fusion360/ENU/" target="_blank" rel="noopener">help.autodesk.com/view/fusion360</a></li><li>Fab Academy. (2026). <em>Computer-Controlled Cutting: weekly class and assignment</em>. Fab Academy. <a href="https://fabacademy.org" target="_blank" rel="noopener">fabacademy.org</a></li><li>Gershenfeld, N. (2005). <em>Fab: The Coming Revolution on Your Desktop—From Personal Computers to Personal Fabrication</em>. Basic Books.</li><li>Ruida Technology. (n.d.). <em>RDWorks V8 user manual</em>. Laser control software documentation.</li><li>Industrial FabLab Ucuenca. (2026). <em>Class material, Week 04: parametrization, laser cutter and press-fit design</em>. Universidad de Cuenca.</li></ul>
+  </div>
+
   <p><a href="index.html" style="color:var(--blue);font-weight:600" data-i18n="back">← Back to Home</a></p>
 </main></div>
 <footer data-i18n="footer">Fab Academy 2026 · Industrial FabLab Ucuenca · Universidad de Cuenca</footer>
