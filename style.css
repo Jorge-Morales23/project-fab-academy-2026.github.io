@@ -197,3 +197,16 @@ nav a:hover{transform:translateY(-1px)}
 .dd.dont{background:#fdecea;border:2px solid #f2b5b2}.dd.dont h3{color:var(--red)}
 .safety-alert{margin:22px 26px 0;padding:18px 22px;background:#fff3cd;border:3px solid #e6a700;border-radius:12px;font-size:1.12rem;font-weight:500}
 .safety-alert strong{color:#8a5a00;font-size:1.2rem}
+
+/* ---- v9: week 05 (press-fit elephant chair) ---- */
+.fig-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:16px 0;align-items:start}
+.fig-pair figure{margin:0}
+.fig-pair img{width:100%;max-height:480px;object-fit:contain;background:#f4f7fc}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin:14px 0}
+.step{background:#f4f7fc;border:1px solid #d6def0;border-top:5px solid var(--blue);border-radius:12px;padding:18px 20px 16px}
+.step:nth-child(2){border-top-color:var(--red)}.step:nth-child(3){border-top-color:var(--green)}.step:nth-child(4){border-top-color:var(--navy)}
+.step .num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;margin-bottom:8px}
+.step h3{color:var(--navy);font-size:1.05rem;margin-bottom:6px}
+.step p{margin:0;font-size:.97rem}
+.tbl td.qty{text-align:center;font-weight:700;color:var(--navy);white-space:nowrap}
+.tbl th.qty{text-align:center}
