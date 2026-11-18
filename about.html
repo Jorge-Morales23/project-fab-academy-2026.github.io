@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Fab Academy 2026 - Industrial FabLab Ucuenca</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.about-team{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-bottom:34px}
+.member{cursor:default;text-align:left;padding:26px 24px}
+.member:hover{transform:none;box-shadow:0 2px 10px #0001}
+.member .avatar{width:110px;height:110px;margin:0 auto 12px}
+.member h3{color:var(--navy);text-align:center;margin-bottom:2px}
+.member .role{display:block;text-align:center;color:var(--muted);margin-bottom:6px}
+.member h4{margin:14px 0 4px;color:var(--blue)}
+.member p{font-size:.95rem;color:var(--text)}
+.about-list{margin:0 0 12px 22px}
+.about-list li{margin-bottom:6px}
+.about-links{margin-top:6px}
+</style>
 </head>
 <body>
 <header>
@@ -21,11 +34,81 @@
   </nav>
 </header>
 <div class="layout"><main>
-  <section class="hero"><h1 data-i18n="aboutTitle">About Our Group</h1><p data-i18n="aboutText">General information about our group, our members, and our work in Fab Academy 2026.</p></section>
-  <div class="panel"><h2 data-i18n="general">General</h2><p data-i18n="generalText">The general summary of the weeks we worked on goes here. Later it will be divided into sections by week.</p></div>
+  <section class="hero hero-img"><h1 data-i18n="aboutTitle">About Our Group</h1><p data-i18n="aboutText">General information about our group, our members, and our work in Fab Academy 2026.</p></section>
+
+  <div class="panel"><h2 data-i18n="aboutWhoT">Who We Are</h2>
+    <p data-i18n="aboutWho">We are four sixth-semester Industrial Engineering students at the Universidad de Cuenca, working together with the Industrial FabLab Ucuenca in Fab Academy 2026. Each of us brings different interests and skills to the team, and this page introduces every member and the work we have done so far.</p>
+    <p data-i18n="heroText">This website documents the process we went through to create our Fab Academy 2026 project. Each week, we record and share what we learned along the way, including digital design, electronics, programming, machine design, and the development of our final project.</p>
+  </div>
+
+  <h2 data-i18n="team">Our Team</h2>
+  <p data-i18n="aboutTeamIntro" style="margin-bottom:16px">Meet the four members of our team: who we are, what we contribute to the project, and what we enjoy outside of class.</p>
+  <div class="grid about-team" id="teamAbout"></div>
+
+  <div class="panel"><h2 data-i18n="aboutDoesT">What We Document</h2>
+    <p data-i18n="aboutDoes">Every week we record the process behind our work. Our documentation covers:</p>
+    <ul class="about-list">
+      <li data-i18n="aboutL1">Digital design (CAD, 2D and 3D modeling)</li>
+      <li data-i18n="aboutL2">Electronics</li>
+      <li data-i18n="aboutL3">Programming</li>
+      <li data-i18n="aboutL4">Machine design</li>
+      <li data-i18n="aboutL5">The development of our final project</li>
+    </ul>
+  </div>
+
+  <h2 class="weekly-title" data-i18n="weekly">Weekly Assignments</h2>
+  <p data-i18n="aboutWeeksIntro" style="margin-bottom:16px">Open any week to read the full documentation of what we did.</p>
+  <div class="grid weekly-grid">
+    <a class="card week-card" href="week01.html"><img class="cover" src="images/week01.jpg" alt="Week 1"><div class="wc-body"><h3 data-i18n="week" data-n="1">Week 1</h3><p data-i18n="w1d">Website setup, GitHub workflow, and research of necessities.</p></div></a>
+    <a class="card week-card" href="week02.html"><img class="cover" src="images/week02.jpg" alt="Week 2"><div class="wc-body"><h3 data-i18n="week" data-n="2">Week 2</h3><p data-i18n="w2d">Computer Aided Design</p></div></a>
+    <a class="card week-card" href="week03.html"><img class="cover" src="images/week03.jpg" alt="Week 3"><div class="wc-body"><h3 data-i18n="week" data-n="3">Week 3</h3><p data-i18n="w3d">3D Modeling and Printing. Digital Scanning and Modeling.</p></div></a>
+    <a class="card week-card" href="week04.html"><img class="cover" src="images/week04.jpg" alt="Week 4" onerror="this.outerHTML='<div class=\'cover empty\'></div>'"><div class="wc-body"><h3 data-i18n="week" data-n="4">Week 4</h3><p data-i18n="w4home">Computer-Controlled Cutting - Parametric design, laser cutter and press-fit chair design</p></div></a>
+    <a class="card week-card" href="week05.html"><img class="cover" src="images/week05.jpg" alt="Week 5" onerror="this.outerHTML='<div class=\'cover empty\'></div>'"><div class="wc-body"><h3 data-i18n="week" data-n="5">Week 5</h3><p data-i18n="w5home">Press-fit elephant chair - fusion design, laser cutting in MDF and assembly manual</p></div></a>
+  </div>
+
+  <p class="about-links"><a href="index.html" style="color:var(--blue);font-weight:600" data-i18n="back">← Back to Home</a></p>
 </main></div>
 <footer data-i18n="footer">Fab Academy 2026 · Industrial FabLab Ucuenca · Universidad de Cuenca</footer>
 <button id="toTop" title="Back to top">↑</button>
 <script src="script.js"></script>
+<script>
+/* About page: extra texts + team cards (the team data comes from script.js) */
+Object.assign(i18n.en,{
+ "aboutWhoT":"Who We Are",
+ "aboutWho":"We are four sixth-semester Industrial Engineering students at the Universidad de Cuenca, working together with the Industrial FabLab Ucuenca in Fab Academy 2026. Each of us brings different interests and skills to the team, and this page introduces every member and the work we have done so far.",
+ "aboutTeamIntro":"Meet the four members of our team: who we are, what we contribute to the project, and what we enjoy outside of class.",
+ "aboutDoesT":"What We Document",
+ "aboutDoes":"Every week we record the process behind our work. Our documentation covers:",
+ "aboutL1":"Digital design (CAD, 2D and 3D modeling)",
+ "aboutL2":"Electronics",
+ "aboutL3":"Programming",
+ "aboutL4":"Machine design",
+ "aboutL5":"The development of our final project",
+ "aboutWeeksIntro":"Open any week to read the full documentation of what we did.",
+ "w2d":"Computer Aided Design",
+ "w3d":"3D Modeling and Printing. Digital Scanning and Modeling."
+});
+Object.assign(i18n.es,{
+ "aboutWhoT":"Quiénes somos",
+ "aboutWho":"Somos cuatro estudiantes de sexto ciclo de Ingeniería Industrial de la Universidad de Cuenca, trabajando junto con el Industrial FabLab Ucuenca en Fab Academy 2026. Cada uno aporta intereses y habilidades distintas al equipo, y esta página presenta a cada integrante y el trabajo que hemos realizado hasta ahora.",
+ "aboutTeamIntro":"Conoce a los cuatro integrantes de nuestro equipo: quiénes somos, qué aportamos al proyecto y qué disfrutamos fuera de clases.",
+ "aboutDoesT":"Qué documentamos",
+ "aboutDoes":"Cada semana registramos el proceso detrás de nuestro trabajo. Nuestra documentación abarca:",
+ "aboutL1":"Diseño digital (CAD, modelado 2D y 3D)",
+ "aboutL2":"Electrónica",
+ "aboutL3":"Programación",
+ "aboutL4":"Diseño de máquinas",
+ "aboutL5":"El desarrollo de nuestro proyecto final",
+ "aboutWeeksIntro":"Abre cualquier semana para leer la documentación completa de lo que hicimos."
+});
+function renderAbout(){
+ const box=document.getElementById('teamAbout');if(!box)return;
+ const tx=i18n[lang];
+ box.innerHTML=team.map(t=>{
+  const photo=t.img?`<div class="avatar"><img src="${t.img}" alt="${t.n}"></div>`:`<div class="avatar">${t.n[0]}</div>`;
+  return `<div class="card member">${photo}<h3>${t.n}</h3><small class="role">${tx[t.r]}</small><h4>${tx.mDesc}</h4><p>${t.d[lang]}</p><h4>${tx.mPart}</h4><p>${t.p[lang]}</p><h4>${tx.mFun}</h4><p>${t.f[lang]}</p></div>`}).join('');
+}
+(function(){const base=applyLang;applyLang=function(){base();renderAbout()};applyLang()})();
+</script>
 </body>
 </html>
