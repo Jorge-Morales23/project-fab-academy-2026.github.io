@@ -210,3 +210,15 @@ nav a:hover{transform:translateY(-1px)}
 .step p{margin:0;font-size:.97rem}
 .tbl td.qty{text-align:center;font-weight:700;color:var(--navy);white-space:nowrap}
 .tbl th.qty{text-align:center}
+
+/* ---- v9: MidTerm page + floating shortcut to downloads ---- */
+html{scroll-behavior:smooth}
+.hero-midterm{background:linear-gradient(rgba(11,42,91,.72),rgba(11,42,91,.62)),url(images/midterm-fusion-preview.jpg) center/cover no-repeat,linear-gradient(135deg,var(--navy),var(--blue));padding:80px 34px}
+#descargables{scroll-margin-top:110px}
+.dl-fab{position:fixed;top:118px;right:24px;z-index:55;display:flex;align-items:center;gap:8px;height:46px;padding:0 14px;border:0;border-radius:999px;background:var(--green);color:#fff;font:600 .92rem 'Segoe UI',system-ui,Arial,sans-serif;cursor:pointer;box-shadow:0 4px 12px #0004;transition:background .25s,transform .2s}
+.dl-fab:hover{background:var(--red);transform:translateY(-2px)}
+.dl-fab svg{width:22px;height:22px;flex-shrink:0}
+.dl-fab span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .3s}
+.dl-fab:hover span,.dl-fab:focus-visible span{max-width:140px}
+@media(max-width:800px){.dl-fab{top:auto;bottom:84px;right:24px}}
+.ph.vid{min-height:260px}
